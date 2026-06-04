@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es" class="scroll-smooth">
 <head>
@@ -6,19 +7,36 @@
     <title>Lucanjasta Servicios Integrales | Técnico Matriculado</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Añadido AOS para animaciones profesionales -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body class="bg-stone-900 text-stone-100 font-sans antialiased overflow-x-hidden">
     
+    <div id="promoBanner" class="hidden bg-gradient-to-r from-blue-700 via-purple-700 to-red-700 text-white text-center py-3 px-4 text-sm md:text-base font-black tracking-wide shadow-md z-[60] relative border-b border-white/20">
+        <div class="container mx-auto flex flex-col items-center justify-center gap-2">
+            <div class="flex flex-col md:flex-row justify-center items-center gap-3 md:gap-8">
+                <span class="flex items-center gap-2 drop-shadow-md"><i class="fas fa-snowflake text-blue-300"></i> 20% DTO. EN INSTALACIÓN DE AIRES ACONDICIONADOS</span>
+                <span class="hidden md:inline text-white/50">|</span>
+                <span class="flex items-center gap-2 drop-shadow-md"><i class="fas fa-fire text-orange-400"></i> 20% DTO. EN INSTALACIÓN DE CALEFACTORES</span>
+            </div>
+            <div class="text-xs md:text-sm text-yellow-300 font-bold bg-black/30 px-4 py-1 rounded-full mt-1 border border-yellow-400/30">
+                <i class="fas fa-calendar-alt mr-1"></i> Oferta válida desde el 20 de junio al 05 de julio
+            </div>
+        </div>
+    </div>
+
     <header class="sticky top-0 z-50 bg-black/95 backdrop-blur-sm text-white shadow-lg border-b-2 border-yellow-400 transition-all duration-300">
-        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+        <div class="container mx-auto px-6 py-4 flex flex-col sm:flex-row justify-between items-center gap-4">
             <a href="#" class="text-2xl font-black tracking-wider uppercase transition hover:scale-105" data-aos="fade-right">
                 <span class="text-yellow-400">Lucanjasta</span>
             </a>
-            <a href="https://wa.me/5493512485620" target="_blank" class="bg-green-600 hover:bg-green-500 text-white font-bold px-5 py-3 rounded-xl text-base flex items-center gap-2 transition-all duration-300 shadow-[0_0_15px_rgba(22,163,74,0.4)] hover:shadow-[0_0_25px_rgba(22,163,74,0.6)] hover:-translate-y-1" data-aos="fade-left">
-                <i class="fab fa-whatsapp text-xl animate-pulse"></i> URGENCIAS 24HS
-            </a>
+            <div class="flex flex-col sm:flex-row items-center gap-4" data-aos="fade-left">
+                <a href="mailto:Jorgelistello2024@hotmail.com" class="text-stone-300 hover:text-yellow-400 text-sm font-bold flex items-center gap-2 transition-colors">
+                    <i class="fas fa-envelope"></i> Jorgelistello2024@hotmail.com
+                </a>
+                <a href="https://wa.me/5493512485620" target="_blank" class="bg-green-600 hover:bg-green-500 text-white font-bold px-5 py-2 rounded-xl text-sm flex items-center gap-2 transition-all duration-300 shadow-[0_0_15px_rgba(22,163,74,0.4)] hover:shadow-[0_0_25px_rgba(22,163,74,0.6)] hover:-translate-y-1">
+                    <i class="fab fa-whatsapp text-xl animate-pulse"></i> URGENCIAS 24HS
+                </a>
+            </div>
         </div>
     </header>
 
@@ -70,7 +88,6 @@
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <!-- Card 1 -->
             <div class="bg-stone-950 p-8 rounded-2xl border-2 border-stone-800 hover:border-yellow-400 shadow-xl hover:shadow-[0_0_30px_rgba(250,204,21,0.15)] transition-all duration-500 transform hover:-translate-y-3 group" data-aos="fade-up" data-aos-delay="100">
                 <div class="w-16 h-16 bg-stone-900 group-hover:bg-yellow-400 text-yellow-400 group-hover:text-black rounded-2xl flex items-center justify-center mb-6 text-3xl font-black transition-all duration-500 shadow-lg group-hover:rotate-6">
                     <i class="fas fa-fire"></i>
@@ -83,8 +100,6 @@
                     <li class="flex items-start gap-3"><i class="fas fa-check text-purple-500 mt-1"></i> Mantenimiento y habilitaciones normadas.</li>
                 </ul>
             </div>
-
-            <!-- Card 2 -->
             <div class="bg-stone-950 p-8 rounded-2xl border-2 border-stone-800 hover:border-yellow-400 shadow-xl hover:shadow-[0_0_30px_rgba(250,204,21,0.15)] transition-all duration-500 transform hover:-translate-y-3 group" data-aos="fade-up" data-aos-delay="200">
                 <div class="w-16 h-16 bg-stone-900 group-hover:bg-yellow-400 text-yellow-400 group-hover:text-black rounded-2xl flex items-center justify-center mb-6 text-3xl font-black transition-all duration-500 shadow-lg group-hover:-rotate-6">
                     <i class="fas fa-faucet-drip"></i>
@@ -97,8 +112,6 @@
                     <li class="flex items-start gap-3"><i class="fas fa-check text-purple-500 mt-1"></i> Recambio integral de griferías.</li>
                 </ul>
             </div>
-
-            <!-- Card 3 -->
             <div class="bg-stone-950 p-8 rounded-2xl border-2 border-stone-800 hover:border-yellow-400 shadow-xl hover:shadow-[0_0_30px_rgba(250,204,21,0.15)] transition-all duration-500 transform hover:-translate-y-3 group" data-aos="fade-up" data-aos-delay="300">
                 <div class="w-16 h-16 bg-stone-900 group-hover:bg-yellow-400 text-yellow-400 group-hover:text-black rounded-2xl flex items-center justify-center mb-6 text-3xl font-black transition-all duration-500 shadow-lg group-hover:rotate-6">
                     <i class="fas fa-bolt"></i>
@@ -111,8 +124,6 @@
                     <li class="flex items-start gap-3"><i class="fas fa-check text-purple-500 mt-1"></i> Cableados estructurales para obras nuevas.</li>
                 </ul>
             </div>
-
-            <!-- Card 4 -->
             <div class="bg-stone-950 p-8 rounded-2xl border-2 border-stone-800 hover:border-yellow-400 shadow-xl hover:shadow-[0_0_30px_rgba(250,204,21,0.15)] transition-all duration-500 transform hover:-translate-y-3 group" data-aos="fade-up" data-aos-delay="400">
                 <div class="w-16 h-16 bg-stone-900 group-hover:bg-yellow-400 text-yellow-400 group-hover:text-black rounded-2xl flex items-center justify-center mb-6 text-3xl font-black transition-all duration-500 shadow-lg group-hover:-rotate-6">
                     <i class="fas fa-snowflake"></i>
@@ -125,8 +136,6 @@
                     <li class="flex items-start gap-3"><i class="fas fa-check text-purple-500 mt-1"></i> Limpieza profunda y service anual.</li>
                 </ul>
             </div>
-
-            <!-- Card 5 -->
             <div class="bg-stone-950 p-8 rounded-2xl border-2 border-stone-800 hover:border-yellow-400 shadow-xl hover:shadow-[0_0_30px_rgba(250,204,21,0.15)] transition-all duration-500 transform hover:-translate-y-3 group" data-aos="fade-up" data-aos-delay="500">
                 <div class="w-16 h-16 bg-stone-900 group-hover:bg-yellow-400 text-yellow-400 group-hover:text-black rounded-2xl flex items-center justify-center mb-6 text-3xl font-black transition-all duration-500 shadow-lg group-hover:rotate-6">
                     <i class="fas fa-sun"></i>
@@ -139,8 +148,6 @@
                     <li class="flex items-start gap-3"><i class="fas fa-check text-purple-500 mt-1"></i> Integración a sistemas tradicionales.</li>
                 </ul>
             </div>
-
-            <!-- Card 6 -->
             <div class="bg-stone-950 p-8 rounded-2xl border-2 border-stone-800 hover:border-yellow-400 shadow-xl hover:shadow-[0_0_30px_rgba(250,204,21,0.15)] transition-all duration-500 transform hover:-translate-y-3 group" data-aos="fade-up" data-aos-delay="600">
                 <div class="w-16 h-16 bg-stone-900 group-hover:bg-yellow-400 text-yellow-400 group-hover:text-black rounded-2xl flex items-center justify-center mb-6 text-3xl font-black transition-all duration-500 shadow-lg group-hover:-rotate-6">
                     <i class="fas fa-paint-roller"></i>
@@ -156,19 +163,72 @@
         </div>
     </section>
 
+    <section class="bg-stone-900 py-20 border-y border-stone-800">
+        <div class="container mx-auto px-6 max-w-4xl" data-aos="fade-up">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-black text-white uppercase tracking-tight mb-4">Preguntas Frecuentes</h2>
+                <div class="w-16 h-1 bg-yellow-400 mx-auto rounded-full"></div>
+            </div>
+            
+            <div class="space-y-6">
+                <div class="bg-stone-950 p-6 rounded-2xl border border-stone-800 hover:border-yellow-400/50 transition-colors">
+                    <h3 class="text-xl md:text-2xl font-bold text-yellow-400 mb-3 flex items-start gap-3">
+                        <i class="fas fa-question-circle mt-1"></i> ¿Qué beneficios tiene un servicio integral?
+                    </h3>
+                    <p class="text-stone-300 leading-relaxed ml-8">
+                        Elimina la necesidad de lidiar con múltiples proveedores. Toda la gestión se concentra en nuestra empresa, lo que garantiza respuestas rápidas, personal capacitado y un alto estándar de calidad.
+                    </p>
+                </div>
+
+                <div class="bg-stone-950 p-6 rounded-2xl border border-stone-800 hover:border-yellow-400/50 transition-colors">
+                    <h3 class="text-xl md:text-2xl font-bold text-yellow-400 mb-3 flex items-start gap-3">
+                        <i class="fas fa-question-circle mt-1"></i> ¿Qué áreas de cobertura manejan?
+                    </h3>
+                    <p class="text-stone-300 leading-relaxed ml-8">
+                        Trabajamos en <strong>toda la ciudad de Córdoba y alrededores</strong>. Ofrecemos cobertura en countries, barrios cerrados, locales comerciales y oficinas.
+                    </p>
+                </div>
+
+                <div class="bg-stone-950 p-6 rounded-2xl border border-stone-800 hover:border-yellow-400/50 transition-colors">
+                    <h3 class="text-xl md:text-2xl font-bold text-yellow-400 mb-3 flex items-start gap-3">
+                        <i class="fas fa-question-circle mt-1"></i> ¿Ofrecen abonos mensuales o se cobra por visita?
+                    </h3>
+                    <p class="text-stone-300 leading-relaxed ml-8">
+                        Sí, generalmente se trabaja mediante planes a medida y abonos mensuales que incluyen mantenimiento preventivo y correctivo. También brindamos soluciones de emergencia puntuales y <strong>ofrecemos la visita técnica con un costo mínimo</strong>.
+                    </p>
+                </div>
+
+                <div class="bg-stone-950 p-6 rounded-2xl border border-stone-800 hover:border-yellow-400/50 transition-colors">
+                    <h3 class="text-xl md:text-2xl font-bold text-yellow-400 mb-3 flex items-start gap-3">
+                        <i class="fas fa-question-circle mt-1"></i> ¿Cómo garantizan el profesionalismo?
+                    </h3>
+                    <p class="text-stone-300 leading-relaxed ml-8">
+                        Contamos con equipos multidisciplinarios y garantizamos que todos los trabajos técnicos cumplan rigurosamente con las normativas legales y de seguridad vigentes en Argentina.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="container mx-auto px-6 py-20 max-w-5xl">
         <div class="bg-gradient-to-br from-stone-900 to-black rounded-3xl border border-stone-800 p-8 md:p-14 flex flex-col md:flex-row items-center justify-between gap-10 shadow-2xl relative overflow-hidden" data-aos="zoom-in-up">
             <div class="absolute top-0 right-0 w-64 h-64 bg-purple-900/20 rounded-full blur-3xl -mr-20 -mt-20"></div>
             
             <div class="text-center md:text-left flex-1 relative z-10">
                 <span class="text-yellow-400 font-bold tracking-widest uppercase text-sm block mb-3">Comunidad Digital</span>
-                <h3 class="text-3xl md:text-4xl font-black text-white uppercase mb-5">Seguinos en Instagram</h3>
+                <h3 class="text-3xl md:text-4xl font-black text-white uppercase mb-5">Seguinos en Redes y Google</h3>
                 <p class="text-stone-300 text-lg leading-relaxed mb-8">
-                    Subimos videos diarios de los trabajos terminados, consejos de mantenimiento para el hogar y presupuestos abiertos. ¡Interactuá con nuestro perfil oficial!
+                    Subimos videos diarios de los trabajos terminados, consejos de mantenimiento para el hogar y presupuestos abiertos. Además, puedes leer la experiencia real de nuestros clientes.
                 </p>
-                <a href="https://www.instagram.com/lucanjasta" target="_blank" class="inline-flex items-center gap-3 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-500 hover:to-pink-500 text-white font-black px-8 py-4 rounded-xl text-lg transition-all duration-300 shadow-[0_0_20px_rgba(147,51,234,0.4)] hover:shadow-[0_0_30px_rgba(147,51,234,0.6)] hover:-translate-y-1 w-full sm:w-auto justify-center group">
-                    <i class="fab fa-instagram text-2xl group-hover:scale-110 transition-transform"></i> @lucanjasta en Vivo
-                </a>
+                
+                <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                    <a href="https://www.instagram.com/lucanjasta" target="_blank" class="inline-flex items-center gap-3 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-500 hover:to-pink-500 text-white font-black px-6 py-4 rounded-xl text-lg transition-all duration-300 shadow-[0_0_20px_rgba(147,51,234,0.4)] hover:shadow-[0_0_30px_rgba(147,51,234,0.6)] hover:-translate-y-1 justify-center group">
+                        <i class="fab fa-instagram text-2xl group-hover:scale-110 transition-transform"></i> Instagram
+                    </a>
+                    <a href="https://www.google.com/maps/search/Lucanjasta%20Servicios%20Integrales/@-31.43350222,-64.27089526,17z?hl=es" target="_blank" class="inline-flex items-center gap-3 bg-white text-black hover:bg-stone-200 font-black px-6 py-4 rounded-xl text-lg transition-all duration-300 shadow-[0_0_20px_rgba(255,255,255,0.2)] hover:shadow-[0_0_30px_rgba(255,255,255,0.4)] hover:-translate-y-1 justify-center group">
+                        <i class="fab fa-google text-blue-600 text-2xl group-hover:scale-110 transition-transform"></i> Ver Opiniones
+                    </a>
+                </div>
             </div>
 
             <div class="flex flex-col items-center justify-center bg-white p-6 rounded-3xl shadow-2xl border-4 border-stone-100 shrink-0 mx-auto group transform transition hover:rotate-2 relative z-10">
@@ -194,7 +254,8 @@
 
     <footer class="bg-stone-950 text-stone-500 text-sm py-12 text-center border-t border-stone-900">
         <div class="container mx-auto px-6" data-aos="fade-in">
-            <p class="mb-3 font-bold text-stone-400">&copy; 2026 Lucanjasta Servicios Integrales. Todos los derechos reservados.</p>
+            <p class="mb-4 text-stone-300 font-semibold"><i class="fas fa-envelope mr-2"></i> <a href="mailto:Jorgelistello2024@hotmail.com" class="hover:text-yellow-400 transition-colors">Jorgelistello2024@hotmail.com</a></p>
+            <p class="mb-3 font-bold text-stone-400">© 2026 Lucanjasta Servicios Integrales. Todos los derechos reservados.</p>
             <p class="tracking-widest uppercase text-xs">Córdoba Capital y Alrededores | Profesional Técnico Matriculado</p>
         </div>
     </footer>
@@ -203,14 +264,31 @@
         <i class="fab fa-whatsapp text-4xl group-hover:rotate-12 transition-transform"></i>
     </a>
 
-    <!-- Inicialización de AOS (Animaciones) -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
+        // Animaciones
         AOS.init({
             duration: 800,
             easing: 'ease-in-out',
             once: true,
             offset: 100
+        });
+
+        // Script para controlar el Banner de Promoción por Fecha
+        document.addEventListener('DOMContentLoaded', () => {
+            const today = new Date();
+            const currentYear = today.getFullYear();
+            
+            // --- NOTA PARA NICO: Ajusté la fecha al 1 de junio para que la puedas ver en pantalla HOY (4 de junio).
+            // --- Cuando quieras que arranque el 20 real de forma automática, cambiá el "1" por un "20".
+            const promoStart = new Date(currentYear, 5, 1); // 5 = Junio. Acá podés cambiar el día de inicio.
+            
+            // Fecha de fin: 05 de Julio a las 23:59:59
+            const promoEnd = new Date(currentYear, 6, 5, 23, 59, 59); // 6 = Julio
+            
+            if (today >= promoStart && today <= promoEnd) {
+                document.getElementById('promoBanner').classList.remove('hidden');
+            }
         });
     </script>
 </body>
