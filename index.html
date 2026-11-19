@@ -11,7 +11,7 @@
   <meta name="theme-color" content="#0c0a09">
   <meta name="color-scheme" content="dark">
   <meta name="format-detection" content="telephone=no">
-  <link rel="canonical" href="https://licbongiorno.github.io/lucajasta/">
+  <link rel="canonical" href="https://www.lucajasta.com.ar/">
 
   <!-- Open Graph / redes -->
   <meta property="og:type" content="website">
@@ -19,8 +19,14 @@
   <meta property="og:site_name" content="Lucanjasta Servicios Integrales">
   <meta property="og:title" content="Lucanjasta | Gas, plomería y electricidad en Córdoba">
   <meta property="og:description" content="Un solo técnico matriculado para todo tu hogar o negocio. Urgencias 24 hs y presupuesto sin cargo por WhatsApp.">
-  <meta property="og:url" content="https://licbongiorno.github.io/lucajasta/">
-  <meta name="twitter:card" content="summary">
+  <meta property="og:url" content="https://www.lucajasta.com.ar/">
+  <meta property="og:image" content="https://www.lucajasta.com.ar/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Lucanjasta Servicios Integrales: gas, plomería y electricidad en Córdoba">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://www.lucajasta.com.ar/og-image.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <meta name="geo.region" content="AR-X">
   <meta name="geo.placename" content="Córdoba">
   <meta name="geo.position" content="-31.4335;-64.2709">
@@ -39,11 +45,11 @@
     "@graph": [
       {
         "@type": ["HomeAndConstructionBusiness", "Plumber", "Electrician", "HVACBusiness"],
-        "@id": "https://licbongiorno.github.io/lucajasta/#negocio",
+        "@id": "https://www.lucajasta.com.ar/#negocio",
         "name": "Lucanjasta Servicios Integrales",
         "alternateName": "LuCanJasTa",
         "description": "Servicios integrales para hogares, countries, comercios y oficinas en Córdoba: gas, plomería y cloacas, electricidad, aires acondicionados, energías renovables y pintura. Técnico matriculado con más de 10 años de trayectoria y urgencias 24 horas.",
-        "url": "https://licbongiorno.github.io/lucajasta/",
+        "url": "https://www.lucajasta.com.ar/",
         "telephone": "+54 9 351 248-5620",
         "email": "Jorgelistello2024@hotmail.com",
         "priceRange": "$$",
@@ -71,11 +77,11 @@
       },
       {
         "@type": "WebSite",
-        "@id": "https://licbongiorno.github.io/lucajasta/#web",
-        "url": "https://licbongiorno.github.io/lucajasta/",
+        "@id": "https://www.lucajasta.com.ar/#web",
+        "url": "https://www.lucajasta.com.ar/",
         "name": "Lucanjasta Servicios Integrales",
         "inLanguage": "es-AR",
-        "publisher": { "@id": "https://licbongiorno.github.io/lucajasta/#negocio" },
+        "publisher": { "@id": "https://www.lucajasta.com.ar/#negocio" },
         "creator": { "@type": "Person", "name": "Lic. Nicolás Bongiorno", "jobTitle": "Diseño y desarrollo web" }
       },
       {
@@ -219,7 +225,7 @@
     @media (max-width: 400px) { .header__cta .icon-btn { display: none; } .brand { font-size: 1.08rem; gap: 8px; } .brand__mark { width: 34px; height: 34px; } }
 
     /* ---------- Hero ---------- */
-    .hero { position: relative; overflow: hidden; padding: clamp(56px, 10vw, 120px) 0 clamp(64px, 9vw, 110px); isolation: isolate; }
+    .hero { position: relative; overflow: hidden; padding: clamp(48px, 6vw, 80px) 0 clamp(64px, 8vw, 100px); isolation: isolate; }
     .hero__bg { position: absolute; inset: 0; z-index: -1; pointer-events: none; }
     .hero__grid {
       position: absolute; inset: -2px;
@@ -233,7 +239,7 @@
     .hero__in { display: grid; gap: 48px; align-items: center; }
     @media (min-width: 1000px) { .hero__in { grid-template-columns: 1.15fr .85fr; } }
     .eyebrow { display: inline-flex; align-items: center; gap: 8px; padding: 8px 14px; border-radius: 99px; background: rgb(250 204 21 / .1); color: var(--yellow); box-shadow: inset 0 0 0 1px rgb(250 204 21 / .3); font-weight: 800; font-size: .82rem; letter-spacing: .1em; text-transform: uppercase; }
-    .hero h1 { margin: 22px 0 20px; font-weight: 900; font-stretch: 108%; font-size: clamp(2.35rem, 6.6vw, 4.6rem); line-height: 1.02; letter-spacing: -.02em; text-wrap: balance; }
+    .hero h1 { margin: 20px 0 18px; font-weight: 900; font-stretch: 108%; font-size: clamp(2.35rem, 6.2vw, 4.1rem); line-height: 1.02; letter-spacing: -.02em; text-wrap: balance; }
     .hero h1 .hl { display: block; color: transparent; background: linear-gradient(92deg, var(--yellow-2), var(--amber) 55%, var(--purple-2)); -webkit-background-clip: text; background-clip: text; }
     .hero__lead { max-width: 58ch; color: var(--ink-2); font-size: clamp(1.05rem, 1.8vw, 1.25rem); }
     .hero__lead strong { color: var(--ink); }
@@ -468,6 +474,88 @@
       translate: -50% 0; opacity: 0; transform: translateY(12px) scale(.96); pointer-events: none; transition: opacity .25s var(--ease-out), transform .25s var(--ease-out); }
     .toast.is-on { opacity: 1; transform: none; }
 
+    /* =========================================================
+       Efectos "wow"
+       ========================================================= */
+    /* Textura de grano sutil para un acabado premium */
+    body::after {
+      content: ""; position: fixed; inset: 0; z-index: 90; pointer-events: none; opacity: .05; mix-blend-mode: overlay;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    }
+    /* Barra de progreso de lectura */
+    .progress { position: fixed; top: 0; left: 0; right: 0; height: 3px; z-index: 70; transform-origin: left; transform: scaleX(var(--p, 0)); background: linear-gradient(90deg, var(--yellow), var(--amber), var(--purple-2)); box-shadow: 0 0 12px rgb(250 204 21 / .6); }
+
+    /* Titular que se arma palabra por palabra */
+    .js .split .w { display: inline-block; opacity: 0; filter: blur(10px); transform: translateY(.45em) rotate(2deg); transition: opacity .8s var(--ease-out), filter .8s var(--ease-out), transform .9s var(--ease-out); transition-delay: calc(var(--wi) * 55ms + 120ms); }
+    .js .split.is-in .w { opacity: 1; filter: none; transform: none; }
+    .hero h1 .hl { background-size: 200% 100%; animation: hl-flow 6s ease-in-out infinite alternate; }
+    @keyframes hl-flow { to { background-position: 100% 0; } }
+    .hero h1 .hl .w { color: transparent; background: inherit; background-size: inherit; -webkit-background-clip: text; background-clip: text; }
+    .spark { display: block; width: min(420px, 80%); height: 18px; margin-top: 6px; overflow: visible; }
+    .spark path { fill: none; stroke: var(--yellow); stroke-width: 4; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 520; stroke-dashoffset: 520; filter: drop-shadow(0 0 6px rgb(250 204 21 / .8)); }
+    .split.is-in .spark path, html:not(.js) .spark path { animation: draw 1.4s var(--ease-out) 1s forwards; }
+    @keyframes draw { to { stroke-dashoffset: 0; } }
+
+    /* Rayo gigante de fondo en el hero */
+    .hero__bolt { position: absolute; right: -6%; top: 50%; width: min(56vw, 640px); translate: 0 -50%; color: rgb(250 204 21 / .045); z-index: -1; }
+    .hero__bolt path { animation: bolt-flicker 7s infinite; }
+    @keyframes bolt-flicker { 0%, 88%, 100% { opacity: 1; } 90% { opacity: .2; } 92% { opacity: 1; } 94% { opacity: .4; } }
+
+    /* Mosaicos del hero flotando */
+    .orbit__tile { animation: float 6s ease-in-out infinite; animation-delay: calc(var(--t, 0) * -1s); }
+    .orbit__tile:nth-child(1) { --t: 0; } .orbit__tile:nth-child(2) { --t: 1.2; } .orbit__tile:nth-child(3) { --t: 2.4; }
+    .orbit__tile:nth-child(4) { --t: 3.6; } .orbit__tile:nth-child(5) { --t: 4.8; } .orbit__tile:nth-child(6) { --t: .6; }
+    @keyframes float { 50% { translate: 0 -8px; } }
+    .orbit__badge { position: relative; overflow: hidden; }
+    .orbit__badge::after { content: ""; position: absolute; inset: 0; background: linear-gradient(110deg, transparent 35%, rgb(255 255 255 / .6) 50%, transparent 65%); transform: translateX(-100%); animation: sweep 4.5s var(--ease-in-out) 2s infinite; }
+    @keyframes sweep { 0% { transform: translateX(-100%); } 40%, 100% { transform: translateX(100%); } }
+
+    /* Cinta de especialidades en movimiento */
+    .ticker { overflow: hidden; background: #000; border-block: 1px solid var(--line); padding: 18px 0; -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent); mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent); }
+    .ticker__track { display: flex; width: max-content; animation: marquee 38s linear infinite; }
+    .ticker:hover .ticker__track { animation-play-state: paused; }
+    .ticker__group { display: flex; align-items: center; gap: 34px; padding-right: 34px; }
+    .ticker__item { display: inline-flex; align-items: center; gap: 34px; font-weight: 900; font-stretch: 115%; font-size: clamp(1.4rem, 3.4vw, 2.3rem); text-transform: uppercase; letter-spacing: .02em; white-space: nowrap; color: transparent; -webkit-text-stroke: 1.2px rgb(250 250 249 / .5); }
+    .ticker__item:nth-child(odd) { color: var(--yellow); -webkit-text-stroke: 0; }
+    .ticker__item .ic { width: .8em; height: .8em; color: var(--purple-2); }
+    @keyframes marquee { to { transform: translateX(-50%); } }
+
+    /* Títulos de sección con brillo al aparecer */
+    .h2 { background: linear-gradient(100deg, var(--ink) 40%, var(--yellow-2) 50%, var(--ink) 60%) 120% 0 / 300% 100%; -webkit-background-clip: text; background-clip: text; color: transparent; }
+    .is-in .h2, .h2.is-in { animation: title-shine 1.6s var(--ease-out) .25s both; }
+    @keyframes title-shine { from { background-position: 120% 0; } to { background-position: -20% 0; } }
+    .bar { transform: scaleX(0); transition: transform 1s var(--ease-out) .3s; }
+    .is-in .bar { transform: none; }
+
+    /* Tarjetas con inclinación 3D (mouse) */
+    @media (hover: hover) and (pointer: fine) {
+      .cards { perspective: 1200px; }
+      .card.is-tilt { transform: translateY(-6px) rotateX(var(--rx, 0deg)) rotateY(var(--ry, 0deg)); transition: transform .12s linear, box-shadow .3s; }
+    }
+    .card__icon { position: relative; }
+    .card__icon::after { content: ""; position: absolute; inset: -1px; border-radius: inherit; box-shadow: 0 0 0 0 rgb(250 204 21 / .5); }
+    .card:hover .card__icon::after { animation: ring-y 1.2s var(--ease-out); }
+    @keyframes ring-y { to { box-shadow: 0 0 0 14px rgb(250 204 21 / 0); } }
+    .checks li { transition: transform .3s var(--ease-out), color .2s; }
+    .card:hover .checks li { color: var(--ink); }
+    .card:hover .checks li:nth-child(1) { transform: translateX(3px); transition-delay: 0ms; }
+    .card:hover .checks li:nth-child(2) { transform: translateX(3px); transition-delay: 40ms; }
+    .card:hover .checks li:nth-child(3) { transform: translateX(3px); transition-delay: 80ms; }
+    .card:hover .checks li:nth-child(4) { transform: translateX(3px); transition-delay: 120ms; }
+
+    /* Pasos que se "encienden" */
+    .step__n { transition: background .5s, color .5s, box-shadow .5s, transform .6s var(--ease-spring); }
+    .step.is-in .step__n { background: var(--yellow); color: #000; transform: rotate(-6deg); box-shadow: 0 0 0 6px rgb(250 204 21 / .12), 0 10px 30px -8px rgb(250 204 21 / .6); transition-delay: calc(var(--i, 0) * 250ms + 400ms); }
+
+    /* Botón final con borde de energía girando */
+    .glow-border { position: relative; isolation: isolate; border-radius: 18px; padding: 2px; display: inline-flex; }
+    .glow-border::before { content: ""; position: absolute; inset: 0; z-index: -1; border-radius: inherit; background: conic-gradient(from var(--ang, 0deg), var(--yellow), var(--purple-2), var(--green-2), var(--yellow)); animation: credit-spin 3.5s linear infinite; filter: blur(.5px); }
+    .glow-border::after { content: ""; position: absolute; inset: -10px; z-index: -2; border-radius: 26px; background: inherit; }
+    .glow-border > .btn { box-shadow: 0 0 40px -6px rgb(250 204 21 / .55); }
+
+    /* Botones magnéticos */
+    .magnetic { transition: transform .35s var(--ease-out), box-shadow .3s, background-color .2s; }
+
     /* ---------- Aparición al hacer scroll ---------- */
     .js .reveal { opacity: 0; transform: translateY(24px); transition: opacity .7s var(--ease-out), transform .7s var(--ease-out); transition-delay: calc(var(--i, 0) * 80ms); }
     .js .reveal.is-in { opacity: 1; transform: none; }
@@ -475,6 +563,10 @@
     @media (max-width: 699px) { .js .cards .reveal { opacity: 1; transform: none; } }
 
     @media (prefers-reduced-motion: reduce) {
+      .js .split .w { opacity: 1; filter: none; transform: none; }
+      .spark path { stroke-dashoffset: 0; }
+      .ticker__track { animation: none !important; }
+      body::after { display: none; }
       *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; scroll-behavior: auto !important; }
       .js .reveal { opacity: 1; transform: none; }
       .orbit__tile { transform: none; }
@@ -483,6 +575,7 @@
 </head>
 <body>
   <a class="skip" href="#contenido">Saltar al contenido</a>
+  <div class="progress" id="progress" aria-hidden="true"></div>
 
   <!-- Iconos (sprite SVG, sin librerías externas) -->
   <svg width="0" height="0" style="position:absolute" aria-hidden="true">
@@ -556,19 +649,21 @@
         <div class="hero__grid"></div>
         <div class="hero__glow"></div>
         <div class="hero__glow hero__glow--p"></div>
+        <svg class="hero__bolt" viewBox="0 0 24 24"><path fill="currentColor" d="M13.5 2 4 14h6.5L9 22l11-13h-6.8z"/></svg>
       </div>
       <div class="container hero__in">
         <div>
           <span class="eyebrow reveal"><svg class="ic" aria-hidden="true"><use href="#i-badge"/></svg> Profesional técnico matriculado</span>
-          <h1 id="hero-title" class="reveal" style="--i:1">
-            Gas, plomería y electricidad en Córdoba.
+          <h1 id="hero-title" class="split">
+            <span class="split__plain">Gas, plomería y electricidad en Córdoba.</span>
             <span class="hl">Un solo técnico para todo.</span>
+            <svg class="spark" viewBox="0 0 420 18" aria-hidden="true" preserveAspectRatio="none"><path d="M2 12 L120 10 L140 3 L156 15 L172 6 L190 11 L418 8"/></svg>
           </h1>
           <p class="hero__lead reveal" style="--i:2">
             <strong>Lucanjasta Servicios Integrales</strong>: más de <strong>10 años de trabajo</strong> brindando soluciones definitivas, prolijas y con garantía en hogares, countries y comercios de Córdoba.
           </p>
           <div class="hero__ctas reveal" style="--i:3">
-            <a class="btn btn--yellow btn--lg" href="https://wa.me/5493512485620?text=Hola%20Lucanjasta%2C%20quisiera%20pedir%20un%20presupuesto." target="_blank" rel="noopener" data-wa="Hero presupuesto">
+            <a class="btn btn--yellow btn--lg magnetic" href="https://wa.me/5493512485620?text=Hola%20Lucanjasta%2C%20quisiera%20pedir%20un%20presupuesto." target="_blank" rel="noopener" data-wa="Hero presupuesto">
               <svg class="ic ic--wa" aria-hidden="true"><use href="#i-wa"/></svg> Presupuesto por WhatsApp
             </a>
             <a class="btn btn--ghost btn--lg" href="#servicios">
@@ -606,6 +701,14 @@
         <div class="stat"><span class="stat__n"><span data-count="100">100</span>%</span><span class="stat__l">Matriculado</span></div>
       </div>
     </section>
+
+    <!-- ================= CINTA ================= -->
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker__track">
+        <div class="ticker__group"><span class="ticker__item">Gas<svg class="ic"><use href="#i-fire"/></svg></span><span class="ticker__item">Plomería<svg class="ic"><use href="#i-drop"/></svg></span><span class="ticker__item">Electricidad<svg class="ic"><use href="#i-bolt"/></svg></span><span class="ticker__item">Aires acondicionados<svg class="ic"><use href="#i-snow"/></svg></span><span class="ticker__item">Energía solar<svg class="ic"><use href="#i-sun"/></svg></span><span class="ticker__item">Pintura<svg class="ic"><use href="#i-roller"/></svg></span><span class="ticker__item">Urgencias 24 hs<svg class="ic"><use href="#i-clock"/></svg></span></div>
+        <div class="ticker__group"><span class="ticker__item">Gas<svg class="ic"><use href="#i-fire"/></svg></span><span class="ticker__item">Plomería<svg class="ic"><use href="#i-drop"/></svg></span><span class="ticker__item">Electricidad<svg class="ic"><use href="#i-bolt"/></svg></span><span class="ticker__item">Aires acondicionados<svg class="ic"><use href="#i-snow"/></svg></span><span class="ticker__item">Energía solar<svg class="ic"><use href="#i-sun"/></svg></span><span class="ticker__item">Pintura<svg class="ic"><use href="#i-roller"/></svg></span><span class="ticker__item">Urgencias 24 hs<svg class="ic"><use href="#i-clock"/></svg></span></div>
+      </div>
+    </div>
 
     <!-- ================= SERVICIOS ================= -->
     <section class="section" id="servicios" aria-labelledby="servicios-title">
@@ -818,9 +921,9 @@
         <h2 class="h2" id="final-title">¿Necesitás resolver un problema ahora?</h2>
         <p>Coordiná directamente por WhatsApp con un técnico matriculado responsable. Presupuestos sin cargo.</p>
         <div class="final__btns">
-          <a class="btn btn--yellow btn--lg" href="https://wa.me/5493512485620?text=Hola%20Lucanjasta%2C%20necesito%20resolver%20un%20problema." target="_blank" rel="noopener" data-wa="Final">
+          <span class="glow-border"><a class="btn btn--yellow btn--lg magnetic" href="https://wa.me/5493512485620?text=Hola%20Lucanjasta%2C%20necesito%20resolver%20un%20problema." target="_blank" rel="noopener" data-wa="Final">
             <svg class="ic ic--wa" aria-hidden="true"><use href="#i-wa"/></svg> Enviar mensaje a WhatsApp
-          </a>
+          </a></span>
           <a class="btn btn--ghost btn--lg" href="tel:+5493512485620"><svg class="ic" aria-hidden="true"><use href="#i-phone"/></svg> Llamar al 351 248-5620</a>
         </div>
         <p class="zone"><svg class="ic" aria-hidden="true"><use href="#i-pin"/></svg> Córdoba Capital y alrededores</p>
@@ -910,6 +1013,27 @@
 
     $('#year').textContent = new Date().getFullYear();
 
+    /* Titular: dividir en palabras para que se arme */
+    const h1 = $('#hero-title'); let wi = 0;
+    $$('.split__plain, .hl', h1).forEach(part => {
+      const words = part.textContent.trim().split(/\s+/);
+      part.textContent = '';
+      words.forEach((w, k) => {
+        const s = document.createElement('span'); s.className = 'w'; s.style.setProperty('--wi', wi++); s.textContent = w;
+        part.appendChild(s); if (k < words.length - 1) part.appendChild(document.createTextNode(' '));
+      });
+      if (part.classList.contains('split__plain')) part.appendChild(document.createTextNode(' '));
+    });
+    h1.setAttribute('aria-label', 'Gas, plomería y electricidad en Córdoba. Un solo técnico para todo.');
+    requestAnimationFrame(() => requestAnimationFrame(() => h1.classList.add('is-in')));
+
+    /* Barra de progreso */
+    const prog = $('#progress');
+    addEventListener('scroll', () => requestAnimationFrame(() => {
+      const max = document.documentElement.scrollHeight - innerHeight;
+      prog.style.setProperty('--p', max > 0 ? (scrollY / max).toFixed(4) : 0);
+    }), { passive: true });
+
     /* Promoción: visible del 20/6 al 5/7 de cada año, se puede cerrar */
     const promo = $('#promo');
     const now = new Date(), y = now.getFullYear();
@@ -957,10 +1081,23 @@
 
     /* Efectos que siguen al puntero (solo mouse, sin movimiento reducido) */
     if (fine && !reduce) {
-      $$('.card').forEach(c => c.addEventListener('pointermove', e => {
-        const r = c.getBoundingClientRect();
-        c.style.setProperty('--x', (e.clientX - r.left) + 'px'); c.style.setProperty('--y', (e.clientY - r.top) + 'px');
-      }));
+      $$('.card').forEach(c => {
+        c.addEventListener('pointermove', e => {
+          const r = c.getBoundingClientRect(), x = e.clientX - r.left, y = e.clientY - r.top;
+          c.style.setProperty('--x', x + 'px'); c.style.setProperty('--y', y + 'px');
+          c.style.setProperty('--ry', ((x / r.width - .5) * 8).toFixed(2) + 'deg');
+          c.style.setProperty('--rx', ((.5 - y / r.height) * 8).toFixed(2) + 'deg');
+          c.classList.add('is-tilt');
+        });
+        c.addEventListener('pointerleave', () => c.classList.remove('is-tilt'));
+      });
+      $$('.magnetic').forEach(m => {
+        m.addEventListener('pointermove', e => {
+          const r = m.getBoundingClientRect();
+          m.style.transform = `translate(${(e.clientX - r.left - r.width / 2) * .18}px, ${(e.clientY - r.top - r.height / 2) * .3}px)`;
+        });
+        m.addEventListener('pointerleave', () => { m.style.transform = ''; });
+      });
       const glow = $('.hero__glow'), orbit = $('.orbit');
       hero.addEventListener('pointermove', e => {
         const r = hero.getBoundingClientRect();

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://licbongiorno.github.io/lucajasta/sitemap.xml
+Sitemap: https://www.lucajasta.com.ar/sitemap.xml
